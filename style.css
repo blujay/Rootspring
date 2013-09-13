@@ -1,0 +1,1752 @@
+@charset "utf-8";
+
+/*   
+Theme Name: Rootspring
+Theme URI: http://www.rootinteractive.com/themes
+Description: a child theme of Twenty Ten by the WordPress team
+Author: Maf'j Alvarez
+Author URI: http://www.rootinteractive.com
+Template: twentyten
+Version: 1.0
+*/
+
+@import url("../twentyten/style.css");
+
+	
+/*Rootspring Theme*/
+
+/*----------------------------------
+non java layout
+----------------------------------*/
+
+#dfcg_images {
+display:none;
+}
+
+
+
+body,
+input,
+textarea,
+.page-title span,
+.pingback a.url {
+	font-family: "Trebuchet MS", Arial, Tahoma, sans-serif;
+}
+
+h3#comments-title,
+h3#reply-title,
+#access .menu,
+#access div.menu ul,
+#cancel-comment-reply-link,
+.form-allowed-tags,
+#site-info,
+#site-title,
+#wp-calendar,
+.comment-meta,
+.comment-body tr th,
+.comment-body thead th,
+.entry-content label,
+.entry-content tr th,
+.entry-content thead th,
+.entry-meta,
+.entry-title,
+.entry-utility,
+#respond label,
+.navigation,
+.page-title,
+.pingback p,
+.reply,
+.widget-title,
+.wp-caption-text,
+input[type=submit],
+ul,
+li
+{
+	font-family: "Trebuchet MS", Arial, Tahoma, sans-serif;
+}
+
+body {
+	font-size:62.5%;
+	margin:0;
+	padding:0;
+	background-color:#C1D9CB;
+	line-height:1.8em;
+
+}
+
+
+/*special fonts*/
+
+@font-face {
+	font-family: 'MidietSansLight';
+	src: url('type/midiet_sans_light-webfont.eot');
+	src: local('☺'), url('type/midiet_sans_light-webfont.woff') format('woff'), url('type/midiet_sans_light-webfont.ttf') format('truetype'), url('type/midiet_sans_light-webfont.svg#webfontrQlPRsQQ') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'MidietSansBold';
+	src: url('type/midiet_sans_bold-webfont.eot');
+	src: local('☺'), url('type/midiet_sans_bold-webfont.woff') format('woff'), url('type/midiet_sans_bold-webfont.ttf') format('truetype'), url('type/midiet_sans_bold-webfont.svg#webfontYoG6XB2H') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'MidietSansMedium';
+	src: url('type/midiet_sans_medium-webfont.eot');
+	src: local('☺'), url('type/midiet_sans_medium-webfont.woff') format('woff'), url('type/midiet_sans_medium-webfont.ttf') format('truetype'), url('type/midiet_sans_medium-webfont.svg#webfontr8JVIdIc') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+p, input, textarea {
+	font-size:1.3em;
+	font-family:"Trebuchet MS", Arial, Tahoma, sans-serif;
+	line-height:1.5em;
+}
+
+ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+a, a:active, a:link, a:visited, .entry-title a:link, .entry-title a:visited {
+	text-decoration:none;
+	outline-style:none;
+	outline:none;
+	color:#E81864;
+	font-weight:bold;
+}
+
+
+
+a img, img {
+	border:none;
+
+}
+
+h1, h2, h3, h4, h5, h6, dt {
+	color:#000;
+	font-family:'MidietSansMedium', "Trebuchet MS", Arial, Tahoma, sans-serif;
+	line-height:1.5em;
+}
+
+#content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {
+	color:#E81864;
+	line-height:1.2em;
+	margin-bottom:20px;
+	margin-left:0;
+	margin-right:0;
+	margin-top:0;
+}
+
+
+/*----------------------------------
+ Main Blocks  
+----------------------------------*/
+#main, #wrapper, #container, #scrollable, #header, #footer, #footer #colophon {
+	margin:0;
+	padding:0;
+	width:inherit;
+	height:inherit;
+	background:transparent;
+	border:none;
+	position:relative;
+}
+
+#wrapper {
+	width:100%;
+	overflow:hidden;
+	background-color:#fff;
+}
+
+
+#main {
+	clear:both;
+	display:block;
+	margin:0;
+	padding:0;
+	position:relative;
+	overflow:visible;
+	z-index:1;
+}
+
+
+#content, .content {
+	float:left;
+	font-size:inherit;
+	margin-bottom:0;
+	margin-left:0;
+	margin-right:0;
+	margin-top:0;
+	padding-bottom:0;
+	padding-right:0;
+	padding-top:50px;
+	position:relative;
+	width:450px;
+	z-index:1;
+}
+
+.java .content {
+padding-left:200px;
+}
+
+#content {
+padding-left:200px;
+font-size:1em;
+}
+
+.content {
+	width:650px;
+	padding-left:130px;
+	padding-top:50px;
+}
+
+
+#content .entry-content, #comments {
+	width:400px;
+}
+
+#footer {
+	padding-left:130px;
+	background-color:#fff;
+	border-top:1px dashed #ddd;
+}
+
+
+/*----------------------------------
+ Header
+----------------------------------*/
+
+#header .main {
+	position:absolute;
+	top:2000px;
+	left:2000px;
+	display:block;
+	z-index: 1;
+}
+
+#branding {
+	width:0px;
+	display:block;
+	margin:0px;
+	position:absolute;
+	z-index:3;
+	overflow:visible;
+}
+
+#branding h1 a {
+	position: relative;
+	padding:0;
+	margin:20px 0 0 355px;
+	font-size:4em;
+	width:600px;
+	color:#C8DF00;
+	line-height:1em;
+	display:none;
+	font-family:'MidietSansMedium',"Trebuchet MS",Arial,Tahoma,sans-serif;
+}
+
+#branding img {
+	border:none;
+	display:none;
+}
+
+
+
+/*--valign----------------------------------*/
+
+#valign {
+	display:block;
+	float:left;
+	padding:10px;
+	width:60px;
+}
+
+#valign h1 {
+	position: relative;
+	padding:0;
+	margin:0;
+	z-index:2;
+}
+
+#valign h1 span {
+	display:none;
+}
+
+#valign img {
+	border:none;
+}
+
+/*--main navigation----------------------------------*/
+
+#access {
+	background:transparent;
+	width:inherit;
+	color:#000000;
+	position:relative;
+	z-index:2;
+	height:0;
+}
+
+
+
+
+#menu.menu-header {
+	background:transparent none repeat scroll 0 0;
+	display:block;
+	position:relative;
+	text-align:left;
+	width:60em;
+	z-index:2;
+	padding:8px 0 0 10px;
+	display:none;
+}
+
+#menu.menu-header li {
+	float:left;
+	display:inline;
+}
+
+#menu.menu-header li a {
+	font-family:"Trebuchet MS", Arial, Tahoma, sans-serif;
+	font-size:1em;
+}
+
+#menu.menu-header li a:hover {
+	background-color:transparent;
+	color:#000;}
+	
+#menu.menu-beans li.home a {
+	height:100px;
+	width:125px;
+	background-position: 0px 0px;
+	position:relative;
+	background-image: url(images/root-logo-med.png);
+	background-repeat: no-repeat;
+	text-indent:-9999px;
+	padding:0;
+}
+
+
+.screen-reader-text {
+	left:-9000px;
+	position:absolute;
+}
+
+
+
+
+
+
+/*--menu beans----------------------------------*/
+
+#menu.menu-beans {
+	padding-top:20px;
+	padding-left:20px;
+}
+
+
+#menu.menu-beans {
+	background-color:transparent;
+	background-image:none;
+	position:absolute;
+	width:80px;
+	z-index:2;
+}
+
+
+
+
+
+#menu.menu-beans li {
+	float:right;
+	margin-right:20px;
+	position:relative;
+	margin:0;
+	padding:0;
+	text-indent:0;
+}
+
+
+
+
+#menu.menu-beans li a {
+font-size:1.5em;
+z-index:5;
+line-height:1.5em;
+
+
+}
+
+#access li:hover > a, #access ul ul :hover > a {
+	background-color:transparent;
+	color:#333333;
+}
+
+
+/*----------------------------------
+ Main Content Area 
+----------------------------------*/
+
+.hentry {
+width:400px;
+}
+
+
+.tile, #content .container {
+	position:relative;
+	float:left;
+}
+
+span.thumbnail{
+	display:block;
+	height:180px;
+	overflow-x:hidden;
+	overflow-y:hidden;
+	margin-bottom:20px;
+	width:400px;
+	background-color:#442D37;
+}
+
+
+#primary, .subpages {
+top:0;}
+
+.subpages ul {
+	line-height:2em;
+}
+
+.subpages a {
+	color:#E81A63;
+	font-size:1.5em;
+}
+
+.subpages li.section-link a {
+font-family:'MidietSansLight',"Trebuchet MS",Arial,Tahoma,sans-serif;
+font-size:3em;
+}
+
+
+
+.subpages a:hover, .subpages li.current_page_item a {
+	color:#C6DD00;}
+
+
+
+.single-post #content h2.entry-title {
+	font-size:3em;
+}
+
+.iframed #content h2.entry-title {
+	padding-top:15px;
+}
+
+h3.entry-title {
+	font-size:4em;
+	color:#C6DD00;
+	font-family:'MidietSansMedium', "Trebuchet MS", Arial, Tahoma, sans-serif;
+}
+
+.entry-content .thumbnail {
+	width:400px;
+	height:180px;
+	background-color:#442D37;
+	display:block;
+	overflow:hidden;
+	
+}
+
+#content .entry-title {
+	color:#E81864;
+	font-size:5em;
+	font-weight:bold;
+	line-height:1.3em;
+	margin-bottom:0;
+	text-align:left;
+}
+
+#content h1.entry-title {
+	font-size:3em;
+	line-height:1.3em;
+	font-weight:bold;
+	clear:both;
+	margin-bottom:20px;
+}
+
+#content h2 {
+font-size:4em;
+}
+
+h2.entry-title {
+	font-size:5em;
+	color:#E81864;
+	width:650px;
+	font-family:'MidietSansLight',"Trebuchet MS",Arial,Tahoma,sans-serif;
+	line-height:1em;
+	padding-bottom:10px;
+}
+
+
+
+#content h3, #content h4, #blog .content h4 {
+	font-family:'MidietSansLight',"Trebuchet MS",Arial,Tahoma,sans-serif;
+	font-size:3em;
+	text-transform:lowercase;
+	color:#B1C100;
+	font-weight:normal;
+	margin-bottom:5px;
+}
+
+
+
+#content h4, .content h4 {
+	color:#E81864;
+	font-family:'MidietSansMedium',"Trebuchet MS",Arial,Tahoma,sans-serif;
+	font-size:3em;
+}
+
+#content .entry-content ul {
+margin-left:15px;
+}
+
+#content .entry-content ul li {
+list-style:square;
+list-style-position:outside;
+font-size:1.3em;
+color:#FF6600;}
+
+#content dt, #content th {
+	font-size:2em;
+}
+
+#content img {
+	margin:0;
+	max-width:650px;
+}
+
+
+#primary, .subpages {
+	background-position:right top;
+	background-repeat:no-repeat;
+	clear:none;
+	float:left;
+	padding-left:20px;
+	padding-top:80px;
+	position:relative;
+	text-align:left;
+	top:0px;
+	width:200px;
+	z-index:5;
+}
+
+.subpages {
+width:180px;
+}
+
+.home #primary {
+padding-top:0;
+}
+
+#primary h3.widget-title {
+	color:#C5DE00;
+	font-family:'MidietSansMedium',"Trebuchet MS",Arial,Tahoma,sans-serif;
+	font-size:2em;
+}
+
+#primary .widget-container {
+padding-bottom:20px;}
+
+#primary a {
+font-size:1.3em;
+}
+
+#secondary {
+padding-right:190px;
+}
+
+/*----------------------------------
+ Footer 
+----------------------------------*/
+
+#footer #colophon {
+	width:580px;
+	margin:0;
+	border:none;
+	padding-top:20px;
+	position:relative;
+	padding-left:0px;
+	padding-bottom:50px;
+}
+
+#footer #site-info {
+	width:300px;
+}
+
+#footer #site-info a {
+	background-image:url(images/site-by-root-interactive-web-design.png);
+	background-position:right top;
+	display:block;
+	height:20px;
+	text-indent:-9999px;
+	width:90px;
+}
+
+/*----------------------------------
+ Home page 
+----------------------------------*/
+.home #content .content {
+padding-left:0;
+padding-top:20px;
+}
+
+.home.java #content #introduction {
+padding-top:0;
+}
+
+.home #content #introduction {
+	padding-top:0px;
+}
+
+.home #content {
+padding-top:20px;
+padding-left:200px;
+}
+
+.home #content #introduction .content h2 {
+	font-size:3em;
+	font-family:'MidietSansMedium',"Trebuchet MS",Arial,Tahoma,sans-serif;
+	height:50px;
+	
+}
+
+.content h2.entry-title, #content h2.entry-title {
+	font-size:5em;
+	font-weight:normal;
+	color:#E81864;
+	padding-bottom:10px;
+	line-height:1.3em;
+}
+
+
+
+
+.single h2.entry-title {
+	font-size:3em;
+	font-family:'MidietSansMedium',"Trebuchet MS",Arial,Tahoma,sans-serif;
+}
+
+
+
+#header span.description {
+	font-size:1.5em;
+}
+
+.home #introduction p {
+line-height:1.8em;
+}
+
+.home #introduction h3 {
+	font-size:2.6em;
+	padding-bottom:0.5em;
+	color:#FC255C;
+}
+
+#contacts {
+	position:relative;
+	top:-15px;
+}
+
+#contacts p.tel {
+	font-size:2.5em;
+	display:block;
+	float:left;
+	color:#E81A63;
+	
+}
+
+a.button.email {
+	margin-left:10px;
+	position:relative;
+	top:7px;
+}
+
+
+a.linkedin, a.twitter, a.RSS {
+	background-repeat:no-repeat;
+	display:block;
+	float:left;
+	height:25px;
+	margin-right:5px;
+	padding-left:20px;
+	background-position:left 5px;
+}
+
+
+a.RSS {
+	background-image: url(images/rss.png);
+}
+
+
+
+/*----------------------------------
+ Other Pages
+----------------------------------*/
+
+/*Services page*/
+
+.java #content #services .content .entry-content {
+width:650px;
+}
+
+
+#content .service h3 {
+	color:#E81864;
+	padding-bottom:10px;
+	padding-right:10px;
+	font-family:'MidietSansMedium',"Trebuchet MS",Arial,Tahoma,sans-serif;
+	font-size:2.5em;
+	text-align:right;
+}
+
+#content .service h4 {
+	padding-bottom:10px;
+	padding-left:10px;
+	font-size:2em;
+	color:#C6DD01;
+	}
+
+.service {
+	border-radius:30px;
+	-moz-border-radius:30px;
+	-webkit-border-radius:30px;
+	display:block;
+	margin-bottom:60px;
+	padding-bottom:20px;
+	padding-left:20px;
+	padding-right:20px;
+	padding-top:20px;
+	position:relative;
+	width:250px;
+	margin-right:30px;
+	float:left;
+	min-height:18em;
+}
+
+.service .icon {
+	background-image:url(images/service-icon-sprite.png);
+	background-repeat:no-repeat;
+	background-position:top left;
+	height:100px;
+	width:140px;
+	position:absolute;
+	display:block;
+	left:0px;
+	bottom:20px;
+}
+
+.service.webdev .icon {
+	background-position:5px -120px;
+	height:140px;
+}
+
+.service.cms .icon {
+	background-position:left -290px;
+	bottom:10px;
+	height:140px;
+	left:-10px;
+}
+
+.service.revive .icon {
+	background-position:left -463px;
+	height:100px;
+	left:0px;
+}
+
+#content .service p {
+	font-size:1.3em;
+	padding-left:100px;
+}
+
+#content .service .more {
+	padding-left:10px;}
+
+.service-text {
+	display:none;
+}
+
+.service p.more:hover, .service h3:hover {
+	cursor:pointer;
+}
+
+.service p.more {
+	-moz-border-radius-bottomleft:10px;
+	-moz-border-radius-bottomright:10px;
+	-moz-border-radius-topright:10px;
+	-webkit-border-radius-bottomleft:10px;
+	-webkit-border-radius-bottomright:10px;
+	-webkit-border-radius-topright:10px;
+	border-radius-bottomleft:10px;
+	border-radius-bottomright:10px;
+	border-radius-topright:10px;
+	background-color:#E81864;
+	bottom:0;
+	color:#FFFFFF;
+	display:block;
+	float:right;
+	font-family:'MidietSansBold',"Trebuchet MS",Arial,Tahoma,sans-serif;
+	font-size:14px;
+	margin-bottom:10px !important;
+	margin-right:20px;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:20px;
+	position:relative;
+	right:0;
+}
+
+#services .subpages {
+padding-top:80px;
+}
+
+
+#content p, #content ul p, #content ol, #content dd, #content pre, #content hr {
+	font-size:1.3em;
+	margin-bottom:24px;
+	
+}
+
+.page .subpages ul {
+	padding-right:0px;
+	padding-top:0;
+	z-index:5;
+	text-align:left;
+}
+
+/*About page*/
+
+#about #reasons li, #services ul.services li {
+display:none;
+}
+
+#about strong {
+	color:#E81864;
+	font-family:'MidietSansMedium',"Trebuchet MS",Arial,Tahoma,sans-serif;
+	font-size:1.3em;
+	font-weight:bold;
+	line-height:1.2em;
+}
+
+/*Portfolio page*/
+
+
+#portfolio .content {
+	width:650px;
+}
+
+#portfolio #post-427 {
+	width:650px;
+}
+
+#portfolio .subpages {
+	position:absolute;
+	left:800px;
+	top:250px;
+}
+
+
+#portfolio .subpages a, #portfolio subpages a:visited {
+	font-size:2em;
+	color:#E81864;
+}
+
+
+
+#portfolio #item-info #inner{
+	padding:20px;
+	position:relative;
+	overflow:auto;
+
+}
+
+#portfolio #inner .case-text {
+display:none;
+}
+
+#portfolio #item-info h2.entry-title{
+	font-size:3em;
+
+}
+
+#portfolio #item-info .entry-meta{
+	display:none;
+
+}
+
+#portfolio .button.close {
+	position:absolute;
+	top:20px;
+	right:20px;
+	z-index:5;
+}
+
+.content .item {
+	display:block;
+	float:left;
+	height:180px;
+	position:relative;
+	width:210px;
+	overflow:hidden;
+}
+
+
+.content .item a.thumbnail {
+	display:block;
+	position:relative;
+	left:0;
+	top:0;
+	padding:0;
+	margin:0;
+	z-index:2;
+	width:200px;
+	height:190px;
+}
+
+#content .content .item a.thumbnail h3.entry-title {
+	font-size:2em;
+	font-family:'MidietSansMedium',"Trebuchet MS",Arial,Tahoma,sans-serif;
+	font-weight:normal;
+}
+
+#content .content .item img {
+	width:200px;
+	height:130px;
+}
+
+.content .item .description {
+	background-color:#E81864;
+	color:white;
+	float:left;
+	height:110px;
+	padding-bottom:10px;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:10px;
+	position:absolute;
+	top:0;
+	width:180px;
+}
+
+.content .item .description p {
+	margin-bottom:0px!important;
+	padding:0;
+}
+
+.content .item .description .button {
+	display:block;
+	position:absolute;
+	bottom:10px;
+	right:10px;
+	background-color:#BF1759;
+}
+
+.content div.item img {
+	border:0 none;
+	height:130px;
+	left:0;
+	position:absolute;
+	top:0;
+	width:200px;
+	z-index:3;
+}
+
+.content .item.alpha {
+	padding-right:10px;
+	clear:both;
+}
+
+.content .item.omega {
+	padding-left:10px;
+}
+
+.content .item .project {
+	display:none;
+}
+
+.content .item h3.title.entry-title {
+	color:#E81864;
+	display:block;
+	font-size:1.8em;
+	padding-top:140px!important;
+	position:absolute;
+	top:0;
+	width:200px;
+	z-index:5;
+}
+
+
+
+
+#portfolio .featured-more {
+	display:none;
+}
+
+#portfolio .featured-more h3 {
+	font-size:1.8em;
+}
+
+#portfolio .category {
+	position:absolute;
+	background-color:black;
+	color:#fff;
+	padding:2px 10px;
+	top:2px;
+	left:2px;
+	z-index:10;
+}
+
+#portfolio .category a {
+	color:#fff;
+}
+
+#clients-list li {
+	display:inline;
+	margin-right:7px;
+	line-height:1.8em;
+	padding-right:7px;
+	border-right:1px solid #ccc;
+	font-size:1.3em;
+}
+
+#clients-list li a {
+font-weight:normal;
+}
+
+#portfolio #clients-list li a:hover {
+	color:#B1C100;
+}
+
+/*Blog and search pages*/
+
+.hentry {
+float:left;
+display:block;
+}
+
+
+.java.single.blog #menu.menu-beans li.home a {
+	height:120px;
+	width:125px;
+	background-position: 0px 0px;
+	position:relative;
+	padding:0;
+}
+
+
+
+
+
+.archive #menu {
+position:absolute;
+}
+
+#content .post.sticky {
+	border:none;
+	background-color:transparent;
+	overflow:auto;
+	margin-bottom:20px;
+}
+
+
+#content .blog h3.entry-title {
+	font-size:3em;
+	font-family:'MidietSansMedium',"Trebuchet MS",Arial,Tahoma,sans-serif;
+}
+
+.category-blog .post-thumb {
+	display:block;
+	float:left;
+	height:200px;
+	margin-bottom:10px;
+	margin-right:20px;
+	overflow-x:hidden;
+	overflow-y:hidden;
+	width:400px;
+}
+
+
+
+
+#other-posts div.post {
+	clear:both;
+	display:block;
+	float:none;
+	margin-bottom:15px;
+	overflow:hidden;
+	position:relative;
+}
+
+#latest-post h2.entry-title {
+	font-size:3.5em!important;
+	text-align:left;
+}
+
+#content #other-posts .entry-content {
+	clear:none;
+	float:left;
+	padding-top:0;
+	width:250px;
+}
+
+
+
+
+
+.single #content, .search #content {
+	float:left;
+}
+
+.meta-data {
+	display:block;
+	float:right;
+}
+
+
+#main .widget-area ul {
+	padding-right:8px;
+}
+
+.category-blog #latest-post h3.entry-title a {
+	color:#E81864;
+	display:block;
+	font-family:'MidietSansLight',"Trebuchet MS",Arial,Tahoma,sans-serif;
+	font-size:1.6em;
+	font-weight:normal;
+	padding-top:10px;
+	text-transform:lowercase;
+}
+
+.category-blog .entry-content .entry-meta {
+	border-top:2px dotted #ccc;
+	margin-bottom:20px;
+}
+
+.smallthumb {
+	display:block;
+	float:left;
+	height:100px;
+	overflow-x:hidden;
+	overflow-y:hidden;
+	position:relative;
+	width:100px;
+	margin-right:20px;
+}
+
+
+
+#blog #other-posts .post .entry-content, .java.archive #content .entry-content {
+	padding-top:0;
+	float:left;
+	clear:none;
+	display:block;
+	padding-bottom:25px;
+	width:280px;
+}
+
+#other-posts p, .archive #content .entry-content p {
+	margin-bottom:10px;
+}
+
+#other-posts h3.entry-title, .archive #content h3.entry-title {
+	width:100%;
+	font-size:2em;
+	font-family:'MidietSansMedium',"Trebuchet MS",Arial,Tahoma,sans-serif;
+}
+
+.archive .hentry {
+	padding-bottom:5px; 
+}
+
+
+
+
+/*----------------------------------
+ Java Enabled Styles
+----------------------------------*/
+
+
+
+/*styles if java enabled */
+
+
+
+.java #branding h1 {
+display:none;
+}
+
+.java.home #content #introduction h2.entry-title{
+	font-family:'MidietSansMedium',"Trebuchet MS",Arial,Tahoma,sans-serif;
+	font-size:2.5em;
+	text-transform:lowercase;
+	color:#E81864;
+	font-weight:normal;
+	height:inherit;
+	width:600px;
+	padding-bottom:0;
+}
+
+.java.archive #content {
+height:inherit;
+}
+
+.java .page #content .java .entry-content, .java #comments {
+	width:400px;
+}
+
+.java #menu.menu-beans {
+position:absolute;
+}
+
+
+.java #menu.menu-beans li a:hover {
+	
+	background-color:transparent;
+}
+
+
+.java #content h2.entry-title {
+	width:425px;
+	text-align:left;
+	font-size:4.5em;
+	color:#E81864;
+	font-family:'MidietSansLight',"Trebuchet MS",Arial,Tahoma,sans-serif;
+	font-weight:normal;
+}
+
+	.java .thumbnail {
+	width:400px;
+	overflow:hidden;
+	}
+
+.java #menu.menu-beans li.home a {
+	left:0;
+	line-height:85px;
+	padding-top:0;
+	text-align:left;
+	text-indent:-9999px;
+}
+
+.java.page #menu.menu-beans li.home a:hover {
+	position:relative;
+	background-image: url(images/root-logo-med.png);
+}
+
+body.java.page, body.java.single {
+	background-image:url(images/tiles/rootspring_r4_c2.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+body.java.single-post #wrapper{
+background-image:none;
+}
+
+.home.java #menu.menu-beans li {
+	float:none;
+	margin-right:20px;
+	position:absolute;
+	margin:0;
+	padding:0;
+	text-indent:0;
+	width:0;
+	height:0;
+	overflow:visible;
+}
+
+.home.java #menu.menu-beans li.home {
+	left: -47px; 
+	top: 210px;
+}
+
+
+.home.java #menu.menu-beans li.home a {
+	height:130px;
+	width:217px;
+	background-position: 0px 0px;
+	position:relative;
+	background-repeat: no-repeat;
+	background-image: url(images/root-logo.png);
+	left: 0; 
+	top: 0;
+}
+
+
+.java .home #introduction .entry-content {
+	width:500px;
+}
+
+.home.java #primary {
+	padding-right:210px;
+	float:right;
+	top:40px;
+}
+
+.java #primary{
+	background-position:right top;
+	background-repeat:no-repeat;
+	clear:none;
+	float:left;
+	padding-left:0px;
+	padding-top:0;
+	position:relative;
+	text-align:left;
+	top:125px;
+	width:200px;
+	z-index:5;
+}
+
+.home.java a.link-beans {
+	background-color:transparent;
+	background-image:url(images/eye-blink.gif);
+	background-repeat:no-repeat;
+	color:#AAAAAA !important;
+	display:block;
+	font-size:1.3em;
+	height:75px;
+	left:510px;
+	line-height:75px;
+	padding-left:85px;
+	padding-top:15px;
+	position:absolute;
+	text-indent:0;
+	top:10px;
+	width:100px;
+	z-index:10;
+}
+
+
+.java a.link-beans-hover, .java a.link-beans:hover {
+	background-image: url(images/eye-hover.gif);}
+
+.java a.link-beans-hover{
+	display:none;
+}
+
+html.home.java, body.home.java  {
+	width:7000px;
+	height:7000px;
+	overflow:auto;
+	margin:0;
+	position:absolute;
+}
+
+.home.java #content {
+	width:5000px;
+	height:5000px;
+	padding-left:130px;
+}
+
+.home .java #scrollable #content {
+	width:5000px;
+	height:5000px;
+	position:relative;
+	top:0;
+	left:0;
+	overflow:visible;
+}
+
+.java #scrollable #content .tile {
+	position: relative;
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	background-position: left top;
+	float:left;
+	overflow:visible;
+	width:1000px;
+	height:1000px;
+}
+.java #scrollable .r3-c3 {background-image: url(images/tiles/rootspring_r3_c3.png);}
+.java #scrollable .r1-c1 {background-image: url(images/tiles/rootspring_r1_c1.png); z-index:2;}
+.java #scrollable .r1-c2 {background-image: url(images/tiles/rootspring_r1_c2.png);}
+.java #scrollable .r1-c3 {background-image: url(images/tiles/rootspring_r1_c3.png);}
+.java #scrollable .r1-c4 {background-image: url(images/tiles/rootspring_r1_c4.png);}
+.java #scrollable .r1-c5 {background-image: url(images/tiles/rootspring_r1_c5.png);}
+.java #scrollable .r2-c1 {background-image: url(images/tiles/rootspring_r2_c1.png);}
+.java #scrollable .r2-c2 {background-image: url(images/tiles/rootspring_r2_c2.png);}
+.java #scrollable .r2-c3 {background-image: url(images/tiles/rootspring_r2_c3.png);}
+.java #scrollable .r2-c4 {background-image: url(images/tiles/rootspring_r2_c4.png);}
+.java #scrollable .r2-c5 {background-image: url(images/tiles/rootspring_r2_c5.png);}
+.java #scrollable .r3-c1 {background-image: url(images/tiles/rootspring_r3_c1.png);}
+.java #scrollable .r3-c2 {background-image: url(images/tiles/rootspring_r3_c2.png);}
+.java #scrollable .r3-c4 {background-image: url(images/tiles/rootspring_r3_c4.png);}
+.java #scrollable .r3-c5 {background-image: url(images/tiles/rootspring_r3_c5.png);}
+.java #scrollable .r4-c1 {background-image: url(images/tiles/rootspring_r4_c1.png);}
+.java #scrollable .r4-c2 {background-image: url(images/tiles/rootspring_r4_c2.png);}
+.java #scrollable .r4-c3 {background-image: url(images/tiles/rootspring_r4_c3.png);}
+.java #scrollable .r4-c4 {background-image: url(images/tiles/rootspring_r4_c4.png);}
+.java #scrollable .r4-c5 {background-image: url(images/tiles/rootspring_r4_c5.png);}
+.java #scrollable .r5-c1 {background-image: url(images/tiles/rootspring_r5_c1.png);}
+.java #scrollable .r5-c2 {background-image: url(images/tiles/rootspring_r5_c2.png);}
+.java #scrollable .r5-c3 {background-image: url(images/tiles/rootspring_r5_c3.png);}
+.java #scrollable .r5-c4 {background-image: url(images/tiles/rootspring_r5_c4.png);}
+.java #scrollable .r5-c5 {background-image: url(images/tiles/rootspring_r5_c5.png);}
+
+
+.home.java #menu.menu-beans {
+	position:relative;
+	z-index:2;
+	left: 173px; 
+	top: 24px;
+	display:block;
+	overflow:visible;
+}
+
+
+
+.home.java #wrapper {
+	position:absolute;
+	width:5000px;
+	min-height:5000px;
+	margin:0;
+	padding:0;
+	display:block;
+	overflow: visible;
+}
+
+
+.home.java #scrollable {
+	position:relative;
+	display:block;
+	width:5000px;
+	height:5000px;
+	left:-2220px;
+	top:-2170px;
+	overflow:visible;
+}
+
+.home.java.scrollbar #scrollable {
+	left:0;
+	top:0;
+}
+
+.home.java #header {
+	left:2290px;
+	position:absolute;
+	top:2250px;
+	z-index:2;
+	display:block;
+	height:150px;
+	width:400px;
+}
+
+.home.java #menu.menu-beans li a {
+	background-image:url(images/menu-beans.png);
+	text-indent:-9999px;
+	display:block;
+	position:relative;
+}
+
+
+.home.java #menu.menu-beans li.services a {background-position: -290px 0px; left: 200px; top: 5px; height:81px; width:102px;}
+.home.java #menu.menu-beans li.portfolio a {background-position: -73px -10px; left: -34px; top: 18px; height:47px; width:108px;}
+.home.java #menu.menu-beans li.about a {background-position: -386px -85px; left: 302px; top: 89px; height:46px; width:69px;}
+.home.java #menu.menu-beans li.blog a {background-position: -0px -92px; left: -105px; top: 96px; height:77px; width:57px;}
+.home.java #menu.menu-beans li.contact a {background-position: -348px -209px; left: 242px; top: 217px; height:59px; width:91px;}
+
+
+
+.home.java #container, .java #content .container {
+	display:block;
+	float:left;
+	margin:0;
+	padding:0;
+	position:absolute;
+}
+
+.home.java #portfolio .content, #services .content .hentry, #portfolio .content .hentry {
+	width:650px;
+	}
+
+.home.java .content {
+	float:left;
+	font-size:inherit;
+	margin:0;
+	padding:50px 0 0 130px;
+	width:650px;
+	position:relative;
+	z-index:1;
+}
+
+.home.java #content .content {
+	padding-left:130px;
+	padding-top:50px;
+}
+
+.java #services .content {
+	width:850px;
+}
+
+
+.java #content .entry-content, .java .content .entry-content {
+	float:left;
+	padding:12px 0 0;
+	width:400px;
+	line-height:1.8em;
+}
+
+.java .home #main #content {
+	top:0;
+	left:0;
+	padding:0;
+	margin:0;
+}
+
+
+
+.home.java #introduction .content {
+	margin:0;
+	padding:610px 0 0 285px;
+	top:2000px;
+	left:2000px;
+}
+
+.home.java #introduction .entry-content {
+width:600px;
+
+}
+
+.home form {
+	clear:both;
+	float:left;
+}
+
+.home .entry-content fieldset {
+	border:none;
+	padding:0;
+}
+
+.twitter {
+	display:block;
+	left:60px;
+	position:fixed;
+	right:50px;
+	text-indent:-999px;
+	top:26em;
+	width:100px;
+	z-index:50;
+}
+
+.java .twitter {
+	position:absolute;
+	right:50px;
+	left: 710px; 
+	top: 434.5px;
+	z-index:50;
+	width:200px;
+	display:block;
+}
+
+
+
+.twitter img {
+float:left;}
+
+.twitter a {
+z-index:50;
+}
+
+.home.java #content #blog .content {
+	width:850px;
+}
+
+.home.java #content #blog #latest-post {
+	width:400px;
+	position:relative;
+	float:left;
+}
+
+.home.java #content #blog .thumbnail {
+	height:235px;
+	background-image:none;
+
+}
+
+.home.java #content #blog #other-posts {
+	width:400px;
+	position:relative;
+	float:right;
+	top:0px;
+}
+
+#content #contacts p {
+	margin:0!important;
+	padding:0;
+}
+
+.home.java .home #scrollable {
+	left:-2170px;
+	top:-2220px;
+}
+
+.button {
+
+	border-radius:10px;
+	-moz-border-radius:10px; 	
+	-webkit-border-radius:10px;
+	background-color:#E81864;
+	color:white !important;
+	font-family:"Trebuchet MS",Arial,Tahoma,sans-serif;
+	font-size:1.2em;
+	padding:2px 10px;
+}
+
+.button:hover {
+	background-color:#C5DE00;
+	cursor:pointer;
+}
+
+.shadow-1{
+	box-shadow: 4px 4px 8px #818181;
+	-webkit-box-shadow: 4px 4px 8px #818181;
+	-moz-box-shadow: 4px 4px 8px #818181;
+}
+
+.iframed #header, .iframed #primary, .iframed #footer,
+.iframed .entry-utility, .iframed #nav-below, .iframed .comments, .iframed .single #nav-above {
+display:none;
+}
+
+#colorbox #cboxLoadedContent, #cboxContent {
+	background-color:#fff!important;
+	margin:0!important;
+}
+
+.iframed #scrollable {
+	height:inherit;
+	widows:inherit;
+	left:inherit;
+	top:inherit;
+}
+
+.iframed #content {
+	width:440px;
+	padding:0px 0 0 20px;
+	overflow:hidden;
+}
+
+
+#colorbox #cboxWrapper #cboxTitle {
+	display:none!important;
+}
+
+.iframed #content h1 {
+	color:#E81864;
+}
+
+
+.iframed #wrapper, .iframed #scrollable, .iframed #main, .iframed #container, .iframed #content{
+	width:440px;
+	overflow:hidden;
+}
+
+.iframed #content .entry-content, .iframed .post {
+	width:400px;
+	overflow:hidden;
+	
+}
+
+.iframed #content h3.entry-title {
+	font-size:3em;
+	font-family:'MidietSansMedium',"Trebuchet MS",Arial,Tahoma,sans-serif;
+	padding-bottom:10px;
+}
+
+.iframed .category-projects .entry-meta {
+	display:none;
+}
+
+.java.home #other-posts .entry-content {
+width:400px;
+}
+
+.java .tooltip {
+	display:none;
+	background:#fff;
+	font-size:1.5em;
+	padding:5px 15px;
+	color:#E81A63;
+	z-index:10;
+	border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	box-shadow: 4px 4px 8px #818181;
+	-webkit-box-shadow: 4px 4px 8px #818181;
+	-moz-box-shadow: 4px 4px 8px #818181;
+	font-family:'MidietSansMedium',"Trebuchet MS",Arial,Tahoma,sans-serif;
+}
+
+
+/*----------------------------------
+ Normal page styles
+----------------------------------*/
+
+
+
+#menu.menu-beans {
+position:fixed;
+left:50px;}
+
+
+
+
+
+.single #content h2.entry-title {
+	font-size:3em;
+	font-family:'MidietSansMedium',"Trebuchet MS",Arial,Tahoma,sans-serif;
+	width:410px;
+	text-align:left;
+	height:inherit;
+}
+
+.page #menu.menu-beans li.home a:hover {
+	position:relative;
+	background-image: url(images/eye-hover.gif);
+}
+
+
+
+.page #content .entry-content ul {
+	padding-left:15px;
+}
+
+.page #content .entry-content li {
+	font-size:1.3em;
+	color:#E81864;
+	line-height:1.5em;
+	list-style:square;
+}
+
+.page .thumbnail.med {
+	background-color:#442D37;
+	height:180px;
+	overflow-x:hidden;
+	overflow-y:hidden;
+	width:400px;
+	background-image:url(http://www.rootinteractive.com/wp-content/uploads/rubber-boat-bits-400x300.jpg)
+}
+
+
+.single #content img.attachment-medium {
+margin-bottom:10px;
+}
+
+.iframed .single #primary {
+display:none;
+}
+
+
+
+}

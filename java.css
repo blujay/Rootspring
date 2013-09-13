@@ -1,0 +1,205 @@
+/*stylesheet if java enabled */
+
+.java #scrollable #content {
+	min-width:5000px;
+	min-height:5000px;
+	position:relative;
+	top:0;
+	left:0;
+	overflow:visible;
+}
+
+.java #scrollable #content .tile {
+	position: relative;
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	background-position: left top;
+	float:left;
+	overflow:visible;
+	min-width:1000px;
+	min-height:1000px;
+}
+.java #scrollable .r3-c3 {background-image: url(images/tiles/rootspring_r3_c3.png);}
+.java #scrollable .r1-c1 {background-image: url(images/tiles/rootspring_r1_c1.png);}
+.java #scrollable .r1-c2 {background-image: url(images/tiles/rootspring_r1_c2.png);}
+.java #scrollable .r1-c3 {background-image: url(images/tiles/rootspring_r1_c3.png);}
+.java #scrollable .r1-c4 {background-image: url(images/tiles/rootspring_r1_c4.png);}
+.java #scrollable .r1-c5 {background-image: url(images/tiles/rootspring_r1_c5.png);}
+.java #scrollable .r2-c1 {background-image: url(images/tiles/rootspring_r2_c1.png);}
+.java #scrollable .r2-c2 {background-image: url(images/tiles/rootspring_r2_c2.png);}
+.java #scrollable .r2-c3 {background-image: url(images/tiles/rootspring_r2_c3.png);}
+.java #scrollable .r2-c4 {background-image: url(images/tiles/rootspring_r2_c4.png);}
+.java #scrollable .r2-c5 {background-image: url(images/tiles/rootspring_r2_c5.png);}
+.java #scrollable .r3-c1 {background-image: url(images/tiles/rootspring_r3_c1.png);}
+.java #scrollable .r3-c2 {background-image: url(images/tiles/rootspring_r3_c2.png);}
+.java #scrollable .r3-c4 {background-image: url(images/tiles/rootspring_r3_c4.png);}
+.java #scrollable .r3-c5 {background-image: url(images/tiles/rootspring_r3_c5.png);}
+.java #scrollable .r4-c1 {background-image: url(images/tiles/rootspring_r4_c1.png);}
+.java #scrollable .r4-c2 {background-image: url(images/tiles/rootspring_r4_c2.png);}
+.java #scrollable .r4-c3 {background-image: url(images/tiles/rootspring_r4_c3.png);}
+.java #scrollable .r4-c4 {background-image: url(images/tiles/rootspring_r4_c4.png);}
+.java #scrollable .r4-c5 {background-image: url(images/tiles/rootspring_r4_c5.png);}
+.java #scrollable .r5-c1 {background-image: url(images/tiles/rootspring_r5_c1.png);}
+.java #scrollable .r5-c2 {background-image: url(images/tiles/rootspring_r5_c2.png);}
+.java #scrollable .r5-c3 {background-image: url(images/tiles/rootspring_r5_c3.png);}
+.java #scrollable .r5-c4 {background-image: url(images/tiles/rootspring_r5_c4.png);}
+.java #scrollable .r5-c5 {background-image: url(images/tiles/rootspring_r5_c5.png);}
+
+
+.home .java #menu.menu-beans {
+	height:268px;
+	left:-24px;
+	position:relative;
+	top:95px;
+	width:474px;
+	z-index:2;
+}
+
+.home .java #wrapper {
+	position:absolute;
+	width:100%;
+	height:5000px;
+	margin:0;
+	padding:0;
+	display:block;
+	overflow: hidden;
+}
+
+
+.home .java #scrollable {
+	position:relative;
+	display:block;
+	width:5000px;
+	height:5000px;
+	left:-2170px;
+	top:-2220px;
+}
+
+.home .java #header {
+	margin:0;
+	padding:0;
+	position:absolute;
+	z-index:2;
+	left:2168px;
+	top:2219px;
+}
+
+.home .java .link-beans {
+	left:600px;
+	position:absolute;
+	width:200px;
+	height:100px;
+	opacity:0.5;
+	text-indent:-9999px;
+}
+
+.home .java #menu.menu-beans li.services a {background-position: -290px 0px; top:0; left:290px; height:81px; width:102px;}
+.home .java #menu.menu-beans li.portfolio a {background-position: -73px -10px; top:10px; left:73px; height:47px; width:108px;}
+.home .java #menu.menu-beans li.about a {background-position: -386px -85px; top:85px; left:386px; height:46px; width:89px;}
+.home .java #menu.menu-beans li.blog a {background-position: -0px -92px; top:92px; left:0px; height:77px; width:57px;}
+.home .java #menu.menu-beans li.contact a {background-position: -348px -209px; top:209px; left:348px; height:59px; width:91px;}
+
+.home .java #menu.menu-beans li.home {
+	height:129px;
+	left:270px;
+	top:181px;
+	width:217px;
+}
+
+.home .java #container, .java #content .container {
+	display:block;
+	float:left;
+	margin:0;
+	padding:0;
+	position:absolute;
+}
+
+.home .java #content, .java #content .content {
+	float:left;
+	font-size:inherit;
+	margin:0;
+	padding:50px 0 0 130px;
+	width:650px;
+	position:relative;
+}
+
+.java #content .entry-content, .java .content .entry-content {
+	float:left;
+	padding:12px 0 0;
+	width:400px;
+	line-height:1.8em;
+}
+
+.java .home #main #content {
+	top:0;
+	left:0;
+	padding:0;
+	margin:0;
+}
+
+.home .java .home #introduction .container {
+	display:block;
+	left:2000px;
+	position:absolute;
+	top:2000px;
+	width:550px;
+	z-index:3;
+}
+
+.home .java .home #introduction .content {
+	margin:0;
+	padding:610px 0 0 285px;
+}
+
+.java #content #contacts p {
+	margin:0!important;
+	padding:0;
+}
+
+.home .java .home #scrollable {
+left:-2170px;
+top:-2220px;
+}
+
+.java #dfcg_images {
+	margin-bottom:20px!important;
+	background:white!important;
+	display:block;
+}
+
+.java #dfcg_images .panel-overlay {
+	background-color:white;
+	padding:0 !important;
+	top:200px !important;
+	width:650px !important;
+}
+
+.java #dfcg_images .overlay {
+	position:relative!important;
+	clear:both;
+	padding-top:200px;
+}
+
+.java #dfcg_images p {
+	color:#333!important;
+	width:520px!important;
+}
+
+.java #dfcg_images p a, #dfcg_images p a:link, #dfcg_images p a:visited {
+	-moz-border-radius:15px;
+	background-color:#E81864;
+	font-family:MidietSansBold;
+	font-size:14px;
+	padding:5px 10px;
+	position:absolute;
+	right:0;
+	text-decoration:none !important;
+	top:50px;
+}
+
+.java .shadow-1{
+	box-shadow: 4px 4px 8px #818181;
+	-webkit-box-shadow: 4px 4px 8px #818181;
+	-moz-box-shadow: 4px 4px 8px #818181;
+	filter: progid:DXImageTransform.Microsoft.dropShadow(color=#818181, offX=4, offY=4, positive=true);
+}
