@@ -1,0 +1,27 @@
+<ul id="tiles">
+	<li class="r1-c1"><div></div></li>
+	<li class="r1-c2"></li>
+	<li class="r1-c3"></li>
+	<li class="r1-c4"></li>
+	<li class="r1-c5"></li>
+	<li class="r2-c1"></li>
+	<li class="r2-c2"></li>
+	<li class="r2-c3"></li>
+	<li class="r2-c4"></li>
+	<li class="r2-c5"></li>
+	<li class="r3-c1"></li>
+	<li class="r3-c2"></li>
+	<li class="r3-c3"></li>
+	<li class="r3-c4"></li>
+	<li class="r3-c5"></li>
+	<li class="r4-c1"></li>
+	<li class="r4-c2"></li>
+	<li class="r4-c3"></li>
+	<li class="r4-c4"></li>
+	<li class="r4-c5"></li>
+	<li class="r5-c1"></li>
+	<li class="r5-c2"></li>
+	<li class="r5-c3"></li>
+	<li class="r5-c4"></li>
+	<li class="r5-c5"></li>
+</ul>
